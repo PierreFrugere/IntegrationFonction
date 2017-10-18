@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="209.0" prefHeight="162.0" prefWidth="672.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="209.0">
+         <tabs>
+            <Tab text="Méthode 1">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Méthode 2">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Méthode 3">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="164.0" prefWidth="672.0" />
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <ChoiceBox fx:id="cb_methode" layoutX="196.0" layoutY="19.0" prefWidth="150.0" />
+      <TextArea fx:id="tf_fonction" layoutX="196.0" layoutY="68.0" prefHeight="54.0" prefWidth="200.0" />
+      <Button fx:id="btn_integrer" layoutX="196.0" layoutY="142.0" mnemonicParsing="false" text="Intégrer" />
+      <Label layoutX="24.0" layoutY="23.0" text="Sélectionner une méthode :" />
+      <Label layoutX="24.0" layoutY="68.0" text="Saisir la fonction : f(x) =" />
+   </children>
+</AnchorPane>
