@@ -15,6 +15,7 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         // TODO intégrer les élémnents dans le ChoiceBox
         String rad = "rattrapage";
+        String rad2 = "rattrapage";
     }
 
 }
