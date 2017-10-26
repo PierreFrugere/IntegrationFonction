@@ -5,6 +5,8 @@ import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -55,6 +57,9 @@ public class Main extends Application {
 
             // Ajoute cet aperçu au centre du layout principal
             layoutPrincipal.setCenter(vueIntegration);
+
+            VueIntegrationController controller = loader.getController();
+//            controller.setDataChoiceBox(); // setChoiceData
         } catch (IOException e) {
             e.printStackTrace();
         }

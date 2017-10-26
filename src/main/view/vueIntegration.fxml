@@ -9,31 +9,22 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="475.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.VueIntegrationController">
    <children>
-      <TabPane layoutY="209.0" prefHeight="162.0" prefWidth="672.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="209.0">
-         <tabs>
-            <Tab text="Méthode 1">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-               </content>
-            </Tab>
-            <Tab text="Méthode 2">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-               </content>
-            </Tab>
-            <Tab text="Méthode 3">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="164.0" prefWidth="672.0" />
-               </content>
-            </Tab>
-         </tabs>
-      </TabPane>
-      <ChoiceBox fx:id="cb_methode" layoutX="196.0" layoutY="19.0" prefWidth="150.0" />
-      <TextArea fx:id="tf_fonction" layoutX="196.0" layoutY="68.0" prefHeight="54.0" prefWidth="200.0" />
-      <Button fx:id="btn_integrer" layoutX="196.0" layoutY="142.0" mnemonicParsing="false" text="Intégrer" />
-      <Label layoutX="24.0" layoutY="23.0" text="Sélectionner une méthode :" />
-      <Label layoutX="24.0" layoutY="68.0" text="Saisir la fonction : f(x) =" />
+      <ChoiceBox fx:id="cb_methode" layoutX="312.0" layoutY="14.0" prefWidth="150.0" />
+      <Button fx:id="btn_integrer" layoutX="271.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleIntegrerAction" text="Intégrer" />
+      <Label layoutX="140.0" layoutY="18.0" text="Sélectionner une méthode :" />
+      <Label layoutX="140.0" layoutY="63.0" text="Saisir la fonction : f(x) =" />
+      <Label layoutX="140.0" layoutY="104.0" text="Borne inferieure :" />
+      <TextField fx:id="tf_borneInf" layoutX="312.0" layoutY="100.0" text="0" />
+      <TextField fx:id="tf_borneSup" layoutX="312.0" layoutY="140.0" text="1" />
+      <Label layoutX="140.0" layoutY="144.0" text="Borne superieure :" />
+      <Label layoutX="140.0" layoutY="184.0" text="Nombre de pas :" />
+      <TextField fx:id="tf_nbPas" layoutX="312.0" layoutY="180.0" text="4096" />
+      <TextField fx:id="tf_fonction" layoutX="312.0" layoutY="59.0" />
+      <TextField fx:id="tf_precision" layoutX="312.0" layoutY="221.0" text="0.00001" />
+      <Label layoutX="140.0" layoutY="225.0" text="Précision souhaitée :" />
+      <Label layoutX="140.0" layoutY="268.0" text="Résultats :" />
+      <TextArea fx:id="ta_resultats" layoutX="139.0" layoutY="293.0" prefHeight="117.0" prefWidth="323.0" />
    </children>
 </AnchorPane>
