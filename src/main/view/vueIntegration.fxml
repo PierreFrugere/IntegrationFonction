@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -9,22 +10,46 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="475.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.VueIntegrationController">
+<AnchorPane prefHeight="424.0" prefWidth="426.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.VueIntegrationController">
    <children>
-      <ChoiceBox fx:id="cb_methode" layoutX="312.0" layoutY="14.0" prefWidth="150.0" />
-      <Button fx:id="btn_integrer" layoutX="271.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleIntegrerAction" text="Intégrer" />
-      <Label layoutX="140.0" layoutY="18.0" text="Sélectionner une méthode :" />
-      <Label layoutX="140.0" layoutY="63.0" text="Saisir la fonction : f(x) =" />
-      <Label layoutX="140.0" layoutY="104.0" text="Borne inferieure :" />
-      <TextField fx:id="tf_borneInf" layoutX="312.0" layoutY="100.0" text="0" />
-      <TextField fx:id="tf_borneSup" layoutX="312.0" layoutY="140.0" text="1" />
-      <Label layoutX="140.0" layoutY="144.0" text="Borne superieure :" />
-      <Label layoutX="140.0" layoutY="184.0" text="Nombre de pas :" />
-      <TextField fx:id="tf_nbPas" layoutX="312.0" layoutY="180.0" text="4096" />
-      <TextField fx:id="tf_fonction" layoutX="312.0" layoutY="59.0" />
-      <TextField fx:id="tf_precision" layoutX="312.0" layoutY="221.0" text="0.00001" />
-      <Label layoutX="140.0" layoutY="225.0" text="Précision souhaitée :" />
-      <Label layoutX="140.0" layoutY="268.0" text="Résultats :" />
-      <TextArea fx:id="ta_resultats" layoutX="139.0" layoutY="293.0" prefHeight="117.0" prefWidth="323.0" />
+      <Button fx:id="btn_integrer" layoutX="169.0" layoutY="372.0" mnemonicParsing="false" onAction="#handleIntegrerAction" text="Intégrer">
+         <font>
+            <Font name="Fiba" size="18.0" />
+         </font></Button>
+      <Label layoutX="53.0" layoutY="94.0" text="Saisir la fonction : f(x) =">
+         <font>
+            <Font name="Avenir Next LT Pro Demi" size="12.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="135.0" text="Borne inferieure :">
+         <font>
+            <Font name="Avenir Next LT Pro Demi" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tf_borneInf" layoutX="203.0" layoutY="131.0" prefHeight="25.0" prefWidth="171.0" text="0">
+         <font>
+            <Font name="Avenir Next LT Pro Demi" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="tf_borneSup" layoutX="203.0" layoutY="171.0" prefHeight="25.0" prefWidth="171.0" text="1">
+         <font>
+            <Font name="Avenir Next LT Pro Demi" size="12.0" />
+         </font></TextField>
+      <Label layoutX="53.0" layoutY="175.0" text="Borne superieure :">
+         <font>
+            <Font name="Avenir Next LT Pro Demi" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tf_fonction" layoutX="203.0" layoutY="90.0" prefHeight="25.0" prefWidth="171.0">
+         <font>
+            <Font name="Avenir Next LT Pro Demi" size="12.0" />
+         </font></TextField>
+      <Label layoutX="53.0" layoutY="215.0" text="Résultats :">
+         <font>
+            <Font name="Avenir Next LT Pro Demi" size="12.0" />
+         </font></Label>
+      <TextArea fx:id="ta_resultats" layoutX="52.0" layoutY="240.0" prefHeight="117.0" prefWidth="323.0" />
+      <Label layoutX="97.0" layoutY="23.0" text="Intégration de fonction">
+         <font>
+            <Font name="Fiba" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="138.0" layoutY="66.0" prefHeight="0.0" prefWidth="151.0" />
    </children>
 </AnchorPane>
